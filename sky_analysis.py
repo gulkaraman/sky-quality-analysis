@@ -62,7 +62,7 @@ except ImportError:
 # ==========================
 
 # Ana veri klasörü (kullanıcıdan verilen)
-DATA_DIR = r"C:\Users\monster\Desktop\Tug_goruntu_isleme\ASC_Data"
+DATA_DIR = ""
 
 # Eğer yukarıdaki yoksa, bir üst dizinde ASC_Data aramayı dene
 FALLBACK_PARENT_SEARCH = True
