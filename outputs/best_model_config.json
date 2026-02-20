@@ -1,0 +1,30 @@
+{
+  "model_file": "best_cloud_classifier.keras",
+  "backbone": "EfficientNetB0",
+  "class_names": [
+    "clear",
+    "overcast",
+    "partly_cloudy"
+  ],
+  "num_classes": 3,
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "preprocessing": "efficientnet",
+  "preprocessing_note": "Apply keras.applications.efficientnet.preprocess_input to RGB image (uint8 0-255) before predict.",
+  "test_metrics": {
+    "accuracy": 0.9026548672566371,
+    "precision_macro": 0.7541910331384015,
+    "recall_macro": 0.8674897119341564,
+    "f1_macro": 0.7882991271526304,
+    "precision_weighted": 0.9280391243595715,
+    "recall_weighted": 0.9026548672566371,
+    "f1_weighted": 0.9117111023429721,
+    "balanced_accuracy": 0.8674897119341564,
+    "mcc": 0.791805311916245,
+    "roc_auc_ovr": 0.9806333141927457
+  },
+  "inference_example": "import json\nfrom tensorflow import keras\nimport keras.applications.efficientnet as eff\nwith open('best_model_config.json') as f:\n    cfg = json.load(f)\nmodel = keras.models.load_model(cfg['model_file'])\nx = eff.preprocess_input(your_rgb_image)  # shape (H,W,3), then batch\npred = model.predict(x)\nlabel = cfg['class_names'][pred[0].argmax()]"
+}
