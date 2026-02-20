@@ -86,7 +86,6 @@ ML (opsiyonel):
 pip install tensorflow
 ```
 
-> TensorFlow yüklü değilse proje **analiz/rapor** kısmını çalıştırır, ML adımını otomatik atlar.
 
 ---
 
@@ -218,7 +217,7 @@ ROC eğrileri:
 - `outputs/roc_curves_EfficientNetB0.png`
 - `outputs/roc_curves_EfficientNetB3.png`
 
-> Kendi sonuçlarını README’ye eklemek için: ilgili `model_metrics_*.json` dosyasındaki değerleri “Sonuçlar” bölümüne kopyalayabilirsin.
+
 
 ### En iyi modelin seçimi
 - Öncelik: `f1_macro`
@@ -302,7 +301,7 @@ Refactor süreci ve davranış değişikliklerinin tamamı: **`REFACTOR_OZET.md`
 
 ## Lisans
 Bu depo **kod** paylaşımı içindir. Veri seti TUG koşullarına tabidir ve bu repo kapsamında değildir.  
-İstersen kod için MIT lisansı ekleyebilirsin.
+
 
 ---
 
@@ -325,8 +324,7 @@ __pycache__/
 
 ---
 
-## Sonuçlar (Bu bölümü kendi çıktınla doldur)
-Aşağıdaki şablonu, `outputs/model_metrics_*.json` dosyalarındaki değerlerle güncelleyebilirsin:
+
 
 **EfficientNetB0**
 - accuracy: ...
