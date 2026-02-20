@@ -1,5 +1,5 @@
 # Gökyüzü Bulutluluk Analizi (Sky Cloudiness Analysis) 
-Bu proje, fisheye / all-sky gökyüzü görüntülerinden **bulutluluk (cloudiness)** oranını hesaplayan ve gözlem kalitesini takip etmek için **CSV rapor** + **grafik** çıktıları üreten Python tabanlı bir analiz pipeline’ıdır.  
+Bu proje, gökyüzü görüntülerinden **bulutluluk (cloudiness)** oranını hesaplayan ve gözlem kalitesini takip etmek için **CSV rapor** + **grafik** çıktıları üreten Python tabanlı bir analiz pipeline’ıdır.  
 
 Pipeline iki katmandan oluşur:
 
