@@ -284,7 +284,6 @@ ROC eğrileri:
 └─ data/                    # (Repo’da yok) Private veri seti bu klasöre konumlandırılır
 ```
 
-> `data/` ve dataset klasörü repoya eklenmemelidir. `.gitignore` ile mutlaka dışarıda bırakın.
 
 ---
 
@@ -301,28 +300,6 @@ Refactor süreci ve davranış değişikliklerinin tamamı: **`REFACTOR_OZET.md`
 
 ## Lisans
 Bu depo **kod** paylaşımı içindir. Veri seti TUG koşullarına tabidir ve bu repo kapsamında değildir.  
-
-
----
-
-### Önerilen `.gitignore` (gizlilik için)
-```gitignore
-# Private data
-data/
-ASC_Data/
-**/ASC_Data/
-
-# Outputs (isteğe bağlı: raporları da repoya koymak istemezsen)
-outputs/
-
-# Python / venv
-.venv/
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-```
-
----
 
 
 
